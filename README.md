@@ -8,7 +8,7 @@ From the command line:
 	
 	mvn package
 
-This will create a jar file in `target/`
+This will create a jar file at `target/ircourse-1.0-SNAPSHOT.jar`
 
 ## Testing
 
