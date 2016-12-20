@@ -1,6 +1,6 @@
 This is a sample Eclipse (and Maven) project for creating a new weighting model and proximity feature in Terrier.
 
-In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java`
+In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java`. You should also edit the corresponding unit tests to ensure your implementations work as expected.
 
 ## Compilation
 
