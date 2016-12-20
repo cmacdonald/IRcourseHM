@@ -12,7 +12,7 @@ This will create a jar file at `target/ircourse-1.0-SNAPSHOT.jar`
 
 ## Testing
 
-Unit tests are provided for both weighting model and proximity feature DSM. Unit tests are run automatically using `mvn package`. You can skip unit testing usign `mvn -DskipTests package`.
+Unit tests are provided for both weighting model and proximity feature DSM. Unit tests are run automatically using `mvn package`. You can skip unit testing using `mvn -DskipTests package`.
 
 ## Usage in Terrier
 
