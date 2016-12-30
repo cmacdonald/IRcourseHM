@@ -2,7 +2,7 @@ This is a sample Eclipse (and Maven) project for creating a new weighting model 
 
 In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java`. You should also edit the corresponding unit tests to ensure your implementations work as expected.
 
-You can work with this project in Eclipse, Netbeans or from the command line. You will need to use the command line to use the project within Terrier.
+You can edit/compile/and test your source in Eclipse, Netbeans or from the command line. You will need to use the command line to deploy your new models within Terrier.
 
 ## Compiling and Testing from the Command Line
 
@@ -18,7 +18,7 @@ Unit tests are provided for both weighting model and proximity feature DSM. Unit
 
 ## Compiling and Testing using Netbeans
 
-To import the project into Netbeans, you simply File...Open Project functionality.
+To import the project into Netbeans, you simply use the File...Open Project functionality.
 
 You can run the unit tests by selecting Test from the project's right-click context menu.
 
