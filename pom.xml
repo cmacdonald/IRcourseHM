@@ -18,7 +18,7 @@
 	<dependency>
      <groupId>org.terrier</groupId>
      <artifactId>terrier-core</artifactId>
-     <version>4.2-SNAPSHOT</version>
+     <version>4.2</version>
      <scope>provided</scope> <!-- we need Terrier to compile and to test, but we will use our jar directly when running -->
 	</dependency>
   </dependencies>
