@@ -34,10 +34,15 @@ You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Ru
 
 ## Usage in Terrier
 
-You can use classes from your project in Terrier by manually adding the generate Jar file to Terrier's classpath. To do this, firstly switch (e.g. `cd`) back to the terrier-core directory, and then alter the CLASSPATH environment variable, before running `trec_terrier.sh`:
+You can use classes from your project in Terrier by manually adding the generate Jar file to Terrier's classpath. To do this, firstly switch (e.g. `cd`) back to the terrier-core directory, and then alter the CLASSPATH environment variable, before running `trec_terrier.sh`. On a Linux machine with a bash shell, this will look like:
 
 	CLASSPATH=/path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar bin/trec_terrier.sh -r
 	
 For instance, to use your new weighting model, specify the name of the class to the trec.model property:
 
 	CLASSPATH=/path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar bin/trec_terrier.sh -r -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
+
+Some students will have tcsh as their default unix shell. In this case, the same command would look like:
+
+    setenv CLASSPATH /path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar 
+    bin/trec_terrier.sh -r -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
