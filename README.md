@@ -34,7 +34,7 @@ You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Ru
 
 ## Usage in Terrier
 
-You can use classes from your project in Terrier by manually adding the generate Jar file to Terrier's classpath. To do this, firstly switch (e.g. `cd`) back to the terrier-core directory, and then alter the CLASSPATH environment variable, before running `trec_terrier.sh`. On a Linux machine with a bash shell, this will look like:
+You can use classes from your project in Terrier by manually adding the generate Jar file to Terrier's classpath. To do this, firstly switch (e.g. `cd`) back to the terrier-core directory, and then alter the CLASSPATH environment variable to point to the generated jar file, before running `trec_terrier.sh`. On a Linux machine with a bash shell, this will look like:
 
 	CLASSPATH=/path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar bin/trec_terrier.sh -r
 	
