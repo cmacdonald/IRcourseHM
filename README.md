@@ -42,7 +42,7 @@ For instance, to use your new weighting model, specify the name of the class to 
 
 	CLASSPATH=/path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar bin/trec_terrier.sh -r -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
 
-Some students will have tcsh as their default unix shell. In this case, the same command would look like:
+Some (Msc) students will have tcsh as their default unix shell. In this case, the same command would look like:
 
     setenv CLASSPATH /path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar 
     bin/trec_terrier.sh -r -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
