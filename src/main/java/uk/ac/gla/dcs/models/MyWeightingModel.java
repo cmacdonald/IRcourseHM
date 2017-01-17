@@ -17,7 +17,7 @@ public class MyWeightingModel extends WeightingModel
 		//averageDocumentLength (numberOfTokens /numberOfDocuments )
    		//keyFrequency (The frequency of the term in the query)
    		//documentFrequency (The document frequency of the term in the collection)
-   		//termFrequency (The term frequency in the collection)
+   		//termFrequency (The frequency of the term in the collection)
    		//numberOfDocuments (The number of documents in the collection)
    		//numberOfTokens (the total length of all documents in the collection)
 
