@@ -46,3 +46,8 @@ Some (Msc) students will have tcsh as their default unix shell. In this case, th
 
     setenv CLASSPATH /path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar 
     bin/trec_terrier.sh -r -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
+    
+Or similarly on Windows:
+
+    SET CLASSPATH="H:\path\to\myproject\target\ircourse-1.0-SNAPSHOT.jar"
+    bin\trec_terrier.bat -r Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
