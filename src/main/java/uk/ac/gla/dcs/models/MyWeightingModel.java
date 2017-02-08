@@ -2,8 +2,10 @@ package uk.ac.gla.dcs.models;
 
 import org.terrier.matching.models.WeightingModel;
 
-/** Instantiate this class for your weighting model. You can tell Terrier to use this class
-  * by specifying trec.model=uk.ac.gla.dcs.models.MyWeightingModel
+/** You should use this sample class to implement a weighting model for Stage 1 of the exercise.
+  * Instantiate this class for your weighting model. You can tell Terrier to use this class
+  * by specifying the property trec.model=uk.ac.gla.dcs.models.MyWeightingModel
+  * NB: There is a corresponding unit test that you should also complete to test your model.
   * @author TODO
   */
 public class MyWeightingModel extends WeightingModel
@@ -24,6 +26,7 @@ public class MyWeightingModel extends WeightingModel
 		return 0d;
 	}
 
+	/** This method is not required, and you are not expected to implement it */
 	public double score(double tf, double docLength, double n_t, double F_t, double _keyFrequency) {
 		throw new UnsupportedOperationException();
 	}
