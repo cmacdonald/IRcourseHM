@@ -4,7 +4,7 @@ import org.terrier.structures.postings.IterablePosting;
 import org.terrier.matching.dsms.DependenceScoreModifier;
 
 /** 
- * You should use this sample class to implement a proximity feature in Stage 2.
+ * You should use this sample class to implement a proximity feature in Exercise 2.
  * TODO: Describe the function that your class implements
  * <p>
  * You can add your feature into a learned model by appending DSM:uk.ac.gla.IRcourse.SampleProxFeatureDSM to the features.list file.
