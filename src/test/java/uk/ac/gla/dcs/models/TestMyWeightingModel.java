@@ -16,14 +16,15 @@ public class TestMyWeightingModel extends ApplicationSetupBasedTest
 		ApplicationSetup.setProperty("termpipelines", "");
 		//make an index with a two sample documents		
 		Index index = IndexTestUtils.makeIndex(
-				new String[]{"doc1", "doc2"}, 
+				new String[]{"doc1", "doc2", "doc3"}, 
 				new String[]{"The quick brown fox jumps over the lazy dog", 
-					"Exploring the zoo, we saw every kangaroo jump and quite a few carried babies."});
+					"Exploring the zoo, we saw every kangaroo jump and quite a few carried babies.",
+					"Sneaky white tiger creeps up on a visitor at a zoo before launching a lightning attack"});
 		
 		WeightingModel wm = new MyWeightingModel();
 		wm.setCollectionStatistics(index.getCollectionStatistics());
 		//double check: our index has two documents
-		assertEquals(2, index.getCollectionStatistics().getNumberOfDocuments());
+		assertEquals(3, index.getCollectionStatistics().getNumberOfDocuments());
 		
 		//what score would your weighting model give to the term 'jumps', 
 		// if it occurred once in a document with total length 5?
