@@ -37,6 +37,7 @@ You can use classes from your project in Terrier, in one of two manners:
  1. Telling Terrier which Maven package to import.
  1. manually adding the generate Jar file to Terrier's classpath.
 
+We now explain these two different methods below.
 
 ### Importing from the local Maven repository
 
