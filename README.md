@@ -14,13 +14,13 @@ This will create a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, and will inst
 
 Unit tests are provided for both weighting model and proximity feature DSM. Unit tests are run automatically using `mvn install`. You can skip unit testing using `mvn -DskipTests install`.
 
-## Compiling and Testing using Netbeans
+## Compiling and Testing using IntelliJ
 
-To import the project into Netbeans, you simply use the File...Open Project functionality.
+To import the project into IntelliJ, you simply use the File...New...Project from Existing Sources functionality.
 
-You can run the unit tests by selecting Test from the project's right-click context menu.
 
-You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Build from the right-click context menu.
+You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Maven Projects...lifecycle...`package` on the right hand sideo of the window. To install that jar file to your local Maven repository, select the `install` from the lifecycle list. You can run the unit tests by selecting `test` from the lifecycle list.
+
 
 ## Compiling and Testing using Eclipse
 
