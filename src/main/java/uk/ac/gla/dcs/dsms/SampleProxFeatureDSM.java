@@ -1,6 +1,6 @@
 package uk.ac.gla.dcs.dsms;
 
-import org.terrier.structures.postings.IterablePosting;
+import org.terrier.structures.postings.Posting;
 import org.terrier.matching.dsms.DependenceScoreModifier;
 
 /** 
@@ -18,8 +18,8 @@ public class SampleProxFeatureDSM extends DependenceScoreModifier {
 	 */
 	@Override
 	protected double calculateDependence(
-			IterablePosting[] ips, //posting lists
-			boolean[] okToUse,  //is this posting list on the correct document?
+			Posting[] ips, //postings for this document (these are actually IterablePosting[])
+			boolean[] okToUse,  //is each posting on the correct document?
 			double[] phraseTermWeights, boolean SD //not needed
 		) 
 	{
@@ -29,7 +29,7 @@ public class SampleProxFeatureDSM extends DependenceScoreModifier {
 		//*** 
 		//TODO: in this part, write your code that inspects
 		//the positions of query terms, to make a proximity function
-		//NB: you can cast each IterablePosting to org.terrier.structures.postings.BlockPosting
+		//NB: you can cast each Posting to org.terrier.structures.postings.BlockPosting
 		//and use the getPositions() method to obtain the positions.
 		//***
 		
