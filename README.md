@@ -19,7 +19,7 @@ Unit tests are provided for both weighting model and proximity feature DSM. Unit
 To import the project into IntelliJ, you simply use the File...New...Project from Existing Sources functionality.
 
 
-You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Maven Projects...lifecycle...`package` on the right hand sideo of the window. To install that jar file to your local Maven repository, select the `install` from the lifecycle list. You can run the unit tests by selecting `test` from the lifecycle list.
+You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Maven Projects...lifecycle...`package` on the right hand side of the IntelliJ window. To install that jar file to your local Maven repository, select the `install` from the lifecycle list. You can run the junit tests by selecting `test` from the lifecycle list.
 
 
 ## Compiling and Testing using Eclipse
