@@ -21,6 +21,14 @@
      <version>5.0</version>
      <scope>provided</scope> <!-- we need Terrier to compile and to test, but we will use our jar directly when running -->
 	</dependency>
+
+
+<dependency>
+     <groupId>org.terrier</groupId>
+     <artifactId>terrier-tests</artifactId>
+     <version>5.0</version>
+     <scope>provided</scope> <!-- we need Terrier to compile and to test, but we will use our jar directly when running -->
+        </dependency>
   </dependencies>
 
 	<build>
