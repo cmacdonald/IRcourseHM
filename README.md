@@ -64,9 +64,11 @@ For instance, to use your new weighting model, specify the name of the class usi
 A few students may have tcsh as their default unix shell. In this case, the same command would look like:
 
     setenv CLASSPATH /path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar 
-    bin/trec_terrier.sh -r -w uk.ac.gla.dcs.models.MyWeightingModel
+    bin/terrier br -w uk.ac.gla.dcs.models.MyWeightingModel
     
 Or similarly on Windows:
 
     SET CLASSPATH="H:\path\to\myproject\target\ircourse-1.0-SNAPSHOT.jar"
-    bin\trec_terrier.bat -r Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
+    bin\terrier.bat br -Dtrec.model=uk.ac.gla.dcs.models.MyWeightingModel
+
+where `br` is short for `batchretrieve` 
