@@ -41,15 +41,17 @@ We now explain these two different methods below.
 
 ### Importing from the local Maven repository
 
-Terrier can search Maven for packages and add these to the classpath automatically. Firstly switch (e.g. `cd`) back to the terrier-platform directory. You will need to specify the group, artifact and version of the package that we want to add to the classpath. There are set in your project's pom.xml file.
+Terrier can search Maven for packages and add these to the classpath automatically. Firstly switch (e.g. `cd`) back to the terrier-platform directory. You will need to specify the group, artifact and version of the package that we want to add to the classpath. There are set in your project's pom.xml file. You add this information to the `terrier.mvn.coords` property in your `terrier.properties` file.
 
-	bin/terrier -Dterrier.mvn.coords=uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT
+	terrier.mvn.coords=uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT
 
-Terrier will tell you that some files have been added to the classpath. Classes defined in this jar files can now be used in the same manner as Terrier's other standard classes. For instance, to use your new weighting model, specify the name of the class using the `-w` commandline option
+Classes defined in this Maven package can now be used in the same manner as Terrier's other standard classes. For instance, to use your new weighting model, specify the name of the class using the `-w` commandline option:
 
-	bin/terrier batchretrieve -Dterrier.mvn.coords=uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT -w uk.ac.gla.dcs.models.MyWeightingModel
+	bin/terrier batchretrieve -w uk.ac.gla.dcs.models.MyWeightingModel
 
-If you change your MyWeightingModel, you will need to re-`install` your project.
+Terrier will tell you that some files have been added to the classpath. 
+
+**NB**: If you change your source code MyWeightingModel, you will need to re-run `mvn install` for your project.
 
 ### Setting the CLASSPATH manually
 
