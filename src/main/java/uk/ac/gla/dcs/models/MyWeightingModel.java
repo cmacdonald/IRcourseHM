@@ -10,6 +10,8 @@ import org.terrier.matching.models.WeightingModel;
   */
 public class MyWeightingModel extends WeightingModel
 {
+	private static final long serialVersionUID = 1L;
+
 	public String getInfo() { return this.getClass().getSimpleName(); }
 	
 	public double score(double tf, double docLength) {
@@ -26,8 +28,4 @@ public class MyWeightingModel extends WeightingModel
 		return 0d;
 	}
 
-	/** This method is not required, and you are not expected to implement it */
-	public double score(double tf, double docLength, double n_t, double F_t, double _keyFrequency) {
-		throw new UnsupportedOperationException();
-	}
 }
