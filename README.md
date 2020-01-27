@@ -51,6 +51,10 @@ Classes defined in this Maven package can now be used in the same manner as Terr
 
 Terrier will tell you that some files have been added to the classpath. 
 
+Alternatively this can be done in a single line using the `-P` commandline option:
+
+	bin/terrier batchretrieve -P uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT -w uk.ac.gla.dcs.models.MyWeightingModel
+
 **NB**: If you change your source code MyWeightingModel, you will need to re-run `mvn install` for your project.
 
 ### Setting the CLASSPATH manually
