@@ -1,4 +1,6 @@
-This is a sample Eclipse (and Maven) project for creating a new weighting model in Terrier 5.x, and later a proximity feature (for Exercise 2).
+This is a sample Eclipse (and Maven) project for Terrier 5.x, to help an analysis tool (Introductory Lab), a new weighting model (Exercise 1), and later a proximity feature (for Exercise 2).
+
+For the Introductory Lab, you will be expected to edit ` src/main/java/uk/ac/gla/dcs/applications/HighestTF.java`.
 
 In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` (Exercise 1) and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java` (Exercise 2). You should also edit the corresponding unit tests in `src/test/java` to ensure your implementations work as you expect.
 
@@ -51,11 +53,15 @@ Classes defined in this Maven package can now be used in the same manner as Terr
 
 Terrier will tell you that some files have been added to the classpath. 
 
-Alternatively this can be done in a single line using the `-P` commandline option:
+Alternatively, for batchretrieve, this can be done in a single line using the `-P` commandline option:
 
 	bin/terrier batchretrieve -P uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT -w uk.ac.gla.dcs.models.MyWeightingModel
 
 **NB**: If you change your source code MyWeightingModel, you will need to re-run `mvn install` for your project.
+
+To use the highest-tf application, ensure that `terrier.mvn.coords` is appropriately specified in your `terrier.properties` file as above, then run:
+
+	bin/terrier highest-tf
 
 ### Setting the CLASSPATH manually
 
