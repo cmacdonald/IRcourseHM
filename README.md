@@ -1,4 +1,4 @@
-This is a sample Eclipse (and Maven) project for creating a new weighting model in Terrier 5.0, and later a proximity feature (for Exercise 2).
+This is a sample Eclipse (and Maven) project for creating a new weighting model in Terrier 5.x, and later a proximity feature (for Exercise 2).
 
 In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` (Exercise 1) and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java` (Exercise 2). You should also edit the corresponding unit tests in `src/test/java` to ensure your implementations work as you expect.
 
@@ -66,12 +66,7 @@ To manually add the generated Jar file to Terrier's classpath, firstly switch (e
 For instance, to use your new weighting model, specify the name of the class using the `-w` commandline option
 
 	CLASSPATH=/path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar bin/terrier batchretrieve -w uk.ac.gla.dcs.models.MyWeightingModel
-
-A few students may have tcsh as their default unix shell. In this case, the same command would look like:
-
-    setenv CLASSPATH /path/to/myproject/target/ircourse-1.0-SNAPSHOT.jar 
-    bin/terrier br -w uk.ac.gla.dcs.models.MyWeightingModel
-    
+  
 Or similarly on Windows:
 
     SET CLASSPATH="H:\path\to\myproject\target\ircourse-1.0-SNAPSHOT.jar"
