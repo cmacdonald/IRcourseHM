@@ -4,7 +4,7 @@ For the Introductory Lab, you will be expected to edit ` src/main/java/uk/ac/gla
 
 In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` (Exercise 1) and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java` (Exercise 2). You should also edit the corresponding unit tests in `src/test/java` to ensure your implementations work as you expect.
 
-You can edit/compile/and test your source in Eclipse, Netbeans or from the command line. You will need to use the command line to deploy your new models within Terrier.
+You can edit/compile/and test your source in Eclipse, IntelliJ or from the command line. You will need to use the command line to deploy your new models within Terrier.
 
 ## Compiling and Testing from the Command Line
 
