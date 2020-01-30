@@ -18,6 +18,7 @@ public class HighestTF extends CLITool {
 
         if (args.length != 1) {
             System.err.println("Usage: " + this.commandname() + " term");
+            System.err.println(this.helpsummary());
             return -1;
         }
         String term = args[0];
@@ -47,5 +48,10 @@ public class HighestTF extends CLITool {
     public String sourcepackage() {
         return "IRcourseHM";
     }
+
+	@Override
+	public String helpsummary() {
+		return "identifies the document with highest tf for given term";
+	}
     
 }
