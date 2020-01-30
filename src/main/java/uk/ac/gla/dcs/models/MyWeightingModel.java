@@ -16,6 +16,10 @@ public class MyWeightingModel extends WeightingModel
 	public String getInfo() { return this.getClass().getSimpleName(); }
 	
 	boolean init = false;
+	
+	//init() will NOT be needed in your Simple TF*IDF implementation but 
+	//will be needed for your vector space model implementation
+	
 	void init() {
 		//you may complete any initialisation code here.
 		//you may assume access to 
