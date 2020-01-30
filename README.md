@@ -2,23 +2,24 @@ This is a sample Eclipse (and Maven) project for Terrier 5.x, to help an analysi
 
 For the Introductory Lab, you will be expected to edit ` src/main/java/uk/ac/gla/dcs/applications/HighestTF.java`.
 
-In your coursework, following the coursework specification, you will be expected to edit/make new version of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` (Exercise 1) and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java` (Exercise 2). You should also edit the corresponding unit tests in `src/test/java` to ensure your implementations work as you expect.
+In your coursework, following the coursework specification, you will be expected to make new implementations of `src/main/java/uk/ac/gla/dcs/models/MyWeightingModel.java` (Exercise 1) and `src/main/java/uk/ac/gla/dcs/dsms/SampleProxFeatureDSM.java` (Exercise 2). You should also edit the corresponding unit tests in `src/test/java` to ensure your implementations work as you expect.
 
 You can edit/compile/and test your source in Eclipse, IntelliJ or from the command line. You will need to use the command line to deploy your new models within Terrier.
 
 
 ## Compiling and Testing using Eclipse
 
-To import the project into Eclipse, use the File...Import Project..Existing Maven Projects.
+NB: This is supported by the SoCS lab machines.
+
+To import the project into Eclipse, use the File...Import Project...Existing Maven Project, or File...Import Project...Existing Project from Git.
 
 You can run the unit tests by selecting Run As...Junit Test from the project's right-click context menu.
 
-You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Run As...Maven Build and entering `package` as the goal. Similarly, you can install that to your local Maven repository by selecting Run As...Maven Build and entering `install` as the goal  
+You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Run As...Maven Build and entering `package` as the goal. Similarly, you can install that to your local Maven repository by selecting Run As...Maven Build and entering `install` as the goal.  
 
 ## Compiling and Testing using IntelliJ
 
-To import the project into IntelliJ, you simply use the File...New...Project from Existing Sources functionality.
-
+If you have IntelliJ installed, to import the project, you simply use the File...New...Project from Existing Sources functionality.
 
 You can obtain a jar file at `target/ircourse-1.0-SNAPSHOT.jar`, by selecting Maven Projects...lifecycle...`package` on the right hand side of the IntelliJ window. To install that jar file to your local Maven repository, select the `install` from the lifecycle list. You can run the junit tests by selecting `test` from the lifecycle list.
 
