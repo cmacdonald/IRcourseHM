@@ -45,7 +45,9 @@ We now explain these two different methods below.
 
 ### Importing from the local Maven repository
 
-Terrier can search Maven for packages and add these to the classpath automatically. Firstly switch (e.g. `cd`) back to the terrier-platform directory. You will need to specify the group, artifact and version of the package that we want to add to the classpath. There are set in your project's pom.xml file. You add this information to the `terrier.mvn.coords` property in your `terrier.properties` file.
+Terrier can search the local Maven repository for packages and add these to the classpath automatically. This assumes that you have used Eclipse/IntelliJ/Maven tools to "install" the package.
+
+Firstly switch (e.g. `cd`) back to the terrier-platform directory. You will need to specify the group, artifact and version of the package that we want to add to the classpath. There are set in your project's pom.xml file. You add this information to the `terrier.mvn.coords` property in your `terrier.properties` file.
 
 	terrier.mvn.coords=uk.ac.gla.dcs:ircourse:1.0-SNAPSHOT
 
