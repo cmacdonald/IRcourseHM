@@ -32,8 +32,8 @@ public class MyWeightingModel extends WeightingModel
 
 		//rq.getIndex() (the underlying Index)
 
-		//rq.getRequest().getMatchingTerms() (the MatchingQueryTerms object, 
-		//which i.e. the system's low level representation of the query)
+		//rq.getRequest().getMatchingQuery Terms() (the MatchingQueryTerms object, 
+		//which is the system's low level representation of the query)
 		
 		//Terrier will only have one index loaded at the once time, so
 		//to share variables between weighting model instances, use static variables
