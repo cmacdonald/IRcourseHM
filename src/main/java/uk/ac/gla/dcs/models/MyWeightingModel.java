@@ -32,7 +32,7 @@ public class MyWeightingModel extends WeightingModel
 
 		//rq.getIndex() (the underlying Index)
 
-		//rq.getMatchingQuery Terms() (the MatchingQueryTerms object, 
+		//rq.getMatchingQueryTerms() (the MatchingQueryTerms object, 
 		//which is the system's low level representation of the query)
 		
 		//Terrier will only have one index loaded at the once time, so
