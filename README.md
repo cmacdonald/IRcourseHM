@@ -11,7 +11,7 @@ You can edit/compile/and test your source in Eclipse, IntelliJ or from the comma
 
 NB: This is supported by the SoCS lab machines.
 
-To import the project into Eclipse, use the File...Import Project...Existing Maven Project, or File...Import Project...Existing Project from Git.
+To import the IRcourseHM project into Eclipse, use File...Import Project...Existing Project from Git (and specify the location of this repository, i.e. `https://github.com/cmacdonald/IRcourseHM.git`). Alternatively, you can download the IRcourseHM manually, and use the File...Import Project...Existing Maven Project.
 
 You can run the unit tests by selecting Run As...Junit Test from the project's right-click context menu.
 
